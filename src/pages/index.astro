@@ -30,11 +30,36 @@ const skills = [
 
 const projects = [
 	{
-		'name': '',
-		'desc': '',
-		'img': '',
-		'github': '',
-		'website': ''
+		'name': 'EasyTime',
+		'desc': "An employee time punch system to track employee's work hours.",
+		'tech': ' Made with React Native, Expo, Tailwind, and Firebase.',
+		'img': '/typescript.svg',
+		'github': 'https://github.com/townerr/EasyTime',
+		'website': 'https://github.com/townerr/EasyTime'
+	},
+	{
+		'name': 'EasyTime',
+		'desc': "An employee time punch system to track employee's work hours.",
+		'tech': ' Made with React Native, Expo, Tailwind, and Firebase.',
+		'img': '/typescript.svg',
+		'github': 'https://github.com/townerr/EasyTime',
+		'website': 'https://github.com/townerr/EasyTime'
+	},
+	{
+		'name': 'EasyTime',
+		'desc': "An employee time punch system to track employee's work hours.",
+		'tech': ' Made with React Native, Expo, Tailwind, and Firebase.',
+		'img': '/typescript.svg',
+		'github': 'https://github.com/townerr/EasyTime',
+		'website': 'https://github.com/townerr/EasyTime'
+	},
+	{
+		'name': 'EasyTime',
+		'desc': "An employee time punch system to track employee's work hours.",
+		'tech': ' Made with React Native, Expo, Tailwind, and Firebase.',
+		'img': '/typescript.svg',
+		'github': 'https://github.com/townerr/EasyTime',
+		'website': 'https://github.com/townerr/EasyTime'
 	},
 ];
 ---
@@ -72,12 +97,18 @@ const projects = [
 		</div>
 	</section>
 	<section id="projects">
-		<div>
-			{projects.map((project) => {
-				return (
-					<Project />
-				);
-			})}
+		<div class="container mx-auto">
+			<h1 class="text-center text-3xl font-semibold py-8">Projects</h1>
+			<div class="flex flex-wrap justify-center px-12 gap-12">
+				{projects.map((project) => {
+					return (
+						<Project name={project.name} desc={project.desc} tech={project.tech} img={project.img} github={project.github} website={project.website} />
+					);
+				})}
+			</div>
 		</div>
 	</section>
+  <section id='#footer'>
+    <div class="py-24"></div>
+  </section>
 </Layout>
