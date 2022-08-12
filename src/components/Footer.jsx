@@ -26,7 +26,7 @@ const Footer = () => {
         </ul>
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-      <span className="block font-semibold text-white sm:text-right">Made with <a href="http://astro.build" class="hover:underline hover:text-x-orange">Astro</a>.</span>
+      <span className="block font-semibold text-white sm:text-right">Made with <a href="http://astro.build" className="hover:underline hover:text-x-orange">Astro</a>.</span>
     </footer>
   )
 }
