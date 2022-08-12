@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.jsx';
 import Blobs from '../components/Blobs.jsx';
 import Skill from '../components/Skill.jsx';
+import Project from '../components/Project.jsx';
 
 const skills = [
 	{
@@ -25,6 +26,16 @@ const skills = [
 		'desc': 'I have used many different types of SQL depending on the project. I have used SQL Server, PostgreSQL, and Mongo to create databases for different applications.',
 		'logo': '/sql.png'
 	}
+];
+
+const projects = [
+	{
+		'name': '',
+		'desc': '',
+		'img': '',
+		'github': '',
+		'website': ''
+	},
 ];
 ---
 <Layout title="Ryan Towner - Portfolio">
@@ -61,6 +72,12 @@ const skills = [
 		</div>
 	</section>
 	<section id="projects">
-
+		<div>
+			{projects.map((project) => {
+				return (
+					<Project />
+				);
+			})}
+		</div>
 	</section>
 </Layout>
