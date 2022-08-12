@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.jsx';
+import Blobs from '../components/Blobs.jsx';
+import Skill from '../components/Skill.jsx';
+
+const skills = [
+	{
+		'name': 'JavaScript & TypeScript',
+		'desc': 'The main language for creating any web application. I have used Javascript and TypeScript for the majority of my projects. Check some out down below!',
+		'logo': '/typescript.svg'
+	},
+	{
+		'name': 'C#',
+		'desc': 'I have used C# to create multiple backend REST APIs and web services. I utilized ASP.NET Core and Entity Framework Core to create REST endpoints and communicate with a database.',
+		'logo': '/csharp.svg'
+	},
+	{
+		'name': 'React & React Native',
+		'desc': 'React is my main framework of choice for building web and mobile applications. I have used others, such as Angular and look forward to learning new ones like SolidJS, but I mainly choose to use React.',
+		'logo': '/react.svg'
+	},
+	{
+		'name': 'SQL',
+		'desc': 'I have used many different types of SQL depending on the project. I have used SQL Server, PostgreSQL, and Mongo to create databases for different applications.',
+		'logo': '/sql.png'
+	}
+];
+---
+<Layout title="Ryan Towner - Portfolio">
+	<section id="splash">
+		<div class="w-full bg-x-purple">
+			<Navbar />
+			<div class="p-12 md:pr-48 pt-48 splash container flex flex-row justify-between mx-auto">
+				<div class="-mt-48">
+					<Blobs />
+				</div>
+				<div class="z-10 bg-x-purple rounded-lg p-2 bg-opacity-70">
+					<h1 class="text-8xl text-right text-white">Hello, I am <span class="text-gradient">Ryan</span></h1>
+					<p class="pt-4 text-white font-semibold text-right">I am a full stack developer. <br />I love creating web and mobile applications using React and React Native. <br />Explore some of my projects below!</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<svg viewBox="0 0 500 87">
+				<path d="M0,50 C150,150 350,0 500,50 L500,00 L0,0 Z" preserveAspectRatio="xMidYMid meet" style="stroke: none; fill:#5A189A;"></path>
+			</svg>
+		</div>
+		<a class="down-arrow" href="#projects"></a>
+	</section>
+	<section id="skills">
+		<div class="container mx-auto">
+			<h1 class="text-center text-3xl font-semibold py-8">Skills</h1>
+			<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 px-12">
+				{skills.map((skill) => {
+					return (
+						<Skill name={skill.name} desc={skill.desc} logo={skill.logo} />
+					);
+				})}
+			</div>
+		</div>
+	</section>
+	<section id="projects">
+
+	</section>
+</Layout>

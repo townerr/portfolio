@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+	<title>ts-svg</title>
+	<style>
+		.s0 { fill: #1976d2 } 
+		.s1 { fill: #ffffff } 
+	</style>
+	<path id="Layer" class="s0" d="m0 0h48v48h-48z"/>
+	<path id="Layer" class="s1" d="m27.5 25.3h-6.3v19.4h-4.9v-19.4h-6.3v-4.3h17.5z"/>
+	<path id="Layer" class="s1" d="m43.9 26.4c0 0-2.3-1.6-5-1.6-2.7 0-3.6 1.3-3.6 2.6 0 3.5 9.7 3.2 9.7 10.2 0 10.9-14.9 6.1-14.9 6.1v-5.2c0 0 2.9 2.1 6.3 2.1 3.4 0 3.3-2.2 3.3-2.5 0-3.3-9.7-3.3-9.7-10.4 0-9.8 14.1-6 14.1-6z"/>
+</svg>
