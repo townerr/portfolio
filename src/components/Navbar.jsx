@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="md:bg-x-purple border-gray-200 px-2 md:pt-2 sm:px-4">
+    <nav className="md:bg-x-purple border-gray-200 px-2 pt-2 sm:px-4">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <a href="#splash" className="flex items-center bg-white p-2 md:mt-2 rounded-lg hover:fill-x-orange hover:text-x-orange">
           <svg width="48px" height="48px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" className="mr-2" alt="Code Logo">

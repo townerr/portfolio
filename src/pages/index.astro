@@ -33,34 +33,50 @@ const projects = [
 	{
 		'name': 'EasyTime',
 		'desc': "An employee time punch system to track employee's work hours.",
-		'tech': ' Made with React Native, Expo, Tailwind, and Firebase.',
+		'tech': 'Made with React Native, Expo, Tailwind, and Firebase.',
 		'img': '/typescript.svg',
 		'github': 'https://github.com/townerr/EasyTime',
 		'website': 'https://github.com/townerr/EasyTime'
 	},
 	{
-		'name': 'EasyTime',
-		'desc': "An employee time punch system to track employee's work hours.",
-		'tech': ' Made with React Native, Expo, Tailwind, and Firebase.',
+		'name': 'u-Weather',
+		'desc': "A simple SPA weather app to check the weather in your area.",
+		'tech': 'Made with React, React-Bootstrap, and some weather APIs.',
 		'img': '/typescript.svg',
-		'github': 'https://github.com/townerr/EasyTime',
-		'website': 'https://github.com/townerr/EasyTime'
+		'github': 'https://github.com/townerr/u-Weather',
+		'website': 'https://condescending-meitner-9a5573.netlify.app/'
 	},
 	{
-		'name': 'EasyTime',
-		'desc': "An employee time punch system to track employee's work hours.",
-		'tech': ' Made with React Native, Expo, Tailwind, and Firebase.',
+		'name': 'Rustatar',
+		'desc': "An application made in rust that generates a random pixelated avatar.",
+		'tech': 'Made with Rust.',
 		'img': '/typescript.svg',
-		'github': 'https://github.com/townerr/EasyTime',
-		'website': 'https://github.com/townerr/EasyTime'
+		'github': 'https://github.com/townerr/Rustatar',
+		'website': ''
 	},
 	{
-		'name': 'EasyTime',
-		'desc': "An employee time punch system to track employee's work hours.",
-		'tech': ' Made with React Native, Expo, Tailwind, and Firebase.',
+		'name': 'FakeBook',
+		'desc': "A facebook clone. A multi-group project. I worked on the notifications microservice.",
+		'tech': 'Made with ASP.NET Web API, MongoDB, and SignalR.',
 		'img': '/typescript.svg',
-		'github': 'https://github.com/townerr/EasyTime',
-		'website': 'https://github.com/townerr/EasyTime'
+		'github': 'https://github.com/2011-fakebook-project3',
+		'website': ''
+	},
+  {
+		'name': 'Pokemon Auctioneer',
+		'desc': "A web application to purchase/open pokemon card packs, and then sell/trade the cards.",
+		'tech': 'Made with ASP.NET Web API, SQL Server, and Angular.',
+		'img': '/typescript.svg',
+		'github': 'https://github.com/2011-nov02-net/RHJ-Project2',
+		'website': ''
+	},
+  {
+		'name': 'Portfolio',
+		'desc': "The portfolio site your viewing right now! A portfolio to show off my projects and skills.",
+		'tech': 'Made with Astro, React, and Tailwind.',
+		'img': '/typescript.svg',
+		'github': 'https://github.com/townerr/portfolio',
+		'website': 'http://towner.dev'
 	},
 ];
 ---
@@ -68,13 +84,13 @@ const projects = [
 	<section id="splash">
 		<div class="w-full bg-x-purple">
 			<Navbar />
-			<div class="p-12 md:pr-48 pt-48 splash container flex flex-row justify-between mx-auto">
-				<div class="-mt-48">
+			<div class="p-12 md:pr-48 splash container flex flex-row justify-between mx-auto">
+				<div class="">
 					<Blobs />
 				</div>
-				<div class="z-10 bg-x-purple rounded-lg p-2 bg-opacity-70">
+				<div class="z-10 bg-x-purple rounded-lg px-2 py-6 bg-opacity-70">
 					<h1 class="text-8xl text-right text-white">Hello, I am <span class="text-gradient">Ryan</span></h1>
-					<p class="pt-4 text-white font-semibold text-right">I am a full stack developer. <br />I love creating web and mobile applications using React and React Native. <br />Explore some of my projects below!</p>
+					<p class="pt-2 text-white font-semibold text-right">I am a full stack developer. <br />I love creating web and mobile applications using React and React Native. <br />Explore some of my projects below!</p>
 				</div>
 			</div>
 		</div>
@@ -83,7 +99,7 @@ const projects = [
 				<path d="M0,50 C150,150 350,0 500,50 L500,00 L0,0 Z" preserveAspectRatio="xMidYMid meet" style="stroke: none; fill:#5A189A;"></path>
 			</svg>
 		</div>
-		<a class="down-arrow" href="#projects"></a>
+		<a class="down-arrow" href="#skills"></a>
 	</section>
 	<section id="skills">
 		<div class="container mx-auto">
